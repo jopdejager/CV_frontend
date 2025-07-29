@@ -1,0 +1,154 @@
+/* bouw blokken */
+.col-100 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-90{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-80{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-70{
+    width: 70%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.col-60{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-50{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-40{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-30{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-20{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-25{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-10{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-5{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col{
+    display: flex;
+    /* flex-direction: column; */
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.background-red {
+    background-color: red;
+}
+.bakckground-green {
+    background-color: green;
+}
+
+/* bouw blokken */
+
+/* navbar */
+a:link, a:visited {
+  /* background-color: tomato; */
+  color: #eb593a;
+  height: 55px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Bitcount", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 55px;
+}
+strong {
+  font-weight: bold;
+  color: #eb593a;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #121212;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.nav_name {
+  font-family: "Bitcount", system-ui;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; font-size: 50px;
+  background: linear-gradient(to right, white,  #eb593a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.nav_links {
+  display: flex;  
+  margin: 0;
+  padding: 0;
+}
+.nav_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_links li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* body */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    /* background-color: #534a4a; */
+    color: #ffffff;
+    font-family: "Bitcount", system-ui, sans-serif;
+}
