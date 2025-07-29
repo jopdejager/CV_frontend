@@ -1,18 +1,19 @@
-
 import Header from "../components/header";
 function Home() {
   return (
     <>
       <Header />
-      
-      <body>
-        <div className='container'>
-          <div className='col-50, background-red'>
-            </div>
-          <div className='col-50, background-green'>
-            </div>
+      <div className='container_home_page'>
+        <div className='col-50 background-red'>
+          <div className="Main_name">
+            <h1> jop</h1>
+            <h1> meulmeester</h1>
+          </div>
         </div>
-      </body>
+        <div className='col-50 background-green'>
+          <p>This is the home page of my websit.</p>
+        </div>
+      </div>
     </>
   );
 }

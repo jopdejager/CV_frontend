@@ -1,8 +1,8 @@
-// import Header from "../components/header";
+import Header from "../components/header";
 function Menu() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
     <a>hey</a>
     </>
   );

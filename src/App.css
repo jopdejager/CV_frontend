@@ -72,8 +72,10 @@
     /* flex-direction: column; */
 }
 .col{
+    flex: 1;
     display: flex;
-    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
 }
 .row{
     display: flex;
@@ -82,28 +84,27 @@
 .background-red {
     background-color: red;
 }
-.bakckground-green {
+.background-green {
     background-color: green;
 }
-
 /* bouw blokken */
 
 /* navbar */
 a:link, a:visited {
-  /* background-color: tomato; */
-  color: #eb593a;
-  height: 55px;
-  width: 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Bitcount", system-ui, sans-serif;
-  font-size: 18px;
-  line-height: 55px;
+    /* background-color: tomato; */
+    color: #eb593a;
+    height: 55px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Bitcount", system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 55px;
 }
 strong {
-  font-weight: bold;
-  color: #eb593a;
+    font-weight: bold;
+    color: #eb593a;
 }
 
 .navbar{
@@ -115,31 +116,30 @@ strong {
     display: flex;
     margin: 0;
     padding: 0;
-
 }
 .nav_name {
-  font-family: "Bitcount", system-ui;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center; font-size: 50px;
-  background: linear-gradient(to right, white,  #eb593a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    font-family: "Bitcount", system-ui;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; font-size: 50px;
+    background: linear-gradient(to right, white,  #eb593a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 .nav_links {
-  display: flex;  
-  margin: 0;
-  padding: 0;
+    display: flex;  
+    margin: 0;
+    padding: 0;
 }
 .nav_link{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav_links li {
-  list-style: none;
-  margin: 0 10px;
+    list-style: none;
+    margin: 0 10px;
 }
 
 /* body */
@@ -149,6 +149,21 @@ body{
     padding: 0;
     background-color: #121212;
     /* background-color: #534a4a; */
+    overflow-x: hidden;
     color: #ffffff;
     font-family: "Bitcount", system-ui, sans-serif;
+}
+.container_home_page{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.Main_name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 100px; */
 }

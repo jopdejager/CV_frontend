@@ -22,7 +22,6 @@ function Header() {
               </ul>
             </div>
           </div>
-        {/* </div> */}
       </nav>
     </>
   );
