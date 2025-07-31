@@ -29,8 +29,20 @@
     display: flex;
     /* flex-direction: column; */
 }
+.col-55{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
 .col-50{
     width: 50%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+.col-45{
+    width: 45%;
     height: 100%;
     display: flex;
     /* flex-direction: column; */
@@ -81,36 +93,60 @@
     display: flex;
     flex-direction: row;
 }
-.background-red {
+.position_relative {
+    position: relative;
+      align-items: center;
+  justify-content: center;
+    overflow: visible;
+      display: flex;
+}
+.align_items_center {
+    align-items: center;
+}
+/* .background-red {
     background-color: red;
 }
 .background-green {
     background-color: green;
-}
+} */
 /* bouw blokken */
 
 /* navbar */
-a:link, a:visited {
-    /* background-color: tomato; */
-    color: #eb593a;
-    height: 55px;
-    width: 80px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "Bitcount", system-ui, sans-serif;
-    font-size: 18px;
-    line-height: 55px;
-}
 strong {
-    font-weight: bold;
-    color: #eb593a;
+    color: #686866;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
 }
+.Defauld_button_link{
+    color: var(--Text-and-Main-Black, #424241);
 
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+    padding: 2%;
+    text-decoration: none;
+    opacity: 0.5;   
+}
+.home_button_link{
+    color: var(--Text-and-Main-Black, #424241);
+    text-decoration: none;
+    /* Text 2 */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
 .navbar{
     width: 100%;
-    height: 60px;
-    background-color: #121212;
+    height: 90px;
+    background-color: #F4E7D3;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -118,14 +154,15 @@ strong {
     padding: 0;
 }
 .nav_name {
-    font-family: "Bitcount", system-ui;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center; font-size: 50px;
-    background: linear-gradient(to right, white,  #eb593a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #424241;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav_links {
     display: flex;  
@@ -147,23 +184,133 @@ strong {
 body{
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #F4E7D3;
     /* background-color: #534a4a; */
     overflow-x: hidden;
     color: #ffffff;
     font-family: "Bitcount", system-ui, sans-serif;
 }
-.container_home_page{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+ .container_home_page {
+  display: flex;
+  width: 100vw;
 }
 .Main_name {
-    width: 100%;
-    height: 100%;
+    width: 730px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding-bottom: 100px; */
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 96px;
+    
+
+} 
+.col_55_home_image {
+  width: 55%;
+  height: 100vh;
+  position: relative;
+  overflow: visible;
 }
+
+.circle-bg {
+  position: absolute;
+  width: 1000px;     
+  height: 1000px;
+  border-radius: 501px;
+  border: 50px solid;
+  border-color: #ebdfcc4c;
+  top: 50px;           
+  left: 400px;         
+  z-index: 1;
+}
+.big-text {
+  position: absolute;
+  bottom: 60px;          
+  left: -220px;
+  font-size: 288px;
+  font-weight: 600;
+  color: #424241;
+  z-index: 1;            
+  pointer-events: none;  
+  opacity: 0.05;
+  letter-spacing: 0;
+  line-height: normal;
+  font-family: "Poppins-SemiBold", Helvetica;
+
+}
+
+.logo_jop {
+  position: absolute;
+  width: 1000px;       
+  height: auto;
+  top: -200px;         
+  left: -75px;          
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Voor schermen kleiner dan 900px */
+
+@media (max-width: 1600px) {
+  .circle-bg {
+    width: 550px;
+    height: 550px;
+  }
+  .logo_jop {
+    width: 600px;
+    transform: translate(30px, 10px);
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container_home_page {
+    flex-direction: column;
+    height: auto;
+  }
+  .col-60 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .circle-bg {
+    width: 450px;
+    height: 450px;
+  }
+  .logo_jop {
+    width: 500px;
+    transform: translate(0px, 0px);
+  }
+}
+
+/* Mobiel */
+@media (max-width: 600px) {
+  .circle-bg {
+    width: 300px;
+    height: 300px;
+  }
+  .logo_jop {
+    width: 340px;
+  }
+}
+
+
+
+
+
