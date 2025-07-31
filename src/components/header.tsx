@@ -32,6 +32,7 @@ function Header() {
         </div>
 
         <div className="col-25 nav-login">
+          <img className="menu_logo" src={MenuSvg} alt="Menu" />
           <Link className="home_button_link" to="/">Login</Link>
         </div>
 

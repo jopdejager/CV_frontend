@@ -195,8 +195,15 @@ strong {
   font-weight: 400;
   line-height: 32px; 
 }
-
-.Menu_logo {
+.nav-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_logo {
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-10px, 5px);
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -221,21 +228,65 @@ body{
   max-width: 75%;
   height: 500px;
   display: flex;
+
   flex-direction: row;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 38px;
   letter-spacing: 0;
   line-height: 96px;
   /* margin-left: 250px; */
+  margin-top: -7%;
+  gap: -100px;
 } 
+.qoute_text{
+  line-height: 1.2;   
+}
 .col-content {
   display: flex;
-  flex-direction: column;  
-  justify-content: center; 
-  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  /* flex: 1; */
+}
+.text_vlak_home_page{
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #686866;
+  font-size: 24px;
+  width: 550px;
+  margin-top: -7%;
+  margin-left: 2%;
+
+}
+.checkout{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+  width: 50%;
+  height: 175px;
+    margin-left: 2%;
+  
+}
+.checkout_button{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(66, 66, 65, 1);
+  box-sizing: border-box;
+  display: flex;
+  width: 242px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  /* position: relative; */
+  /* border-radius: 8px; */
+}
+.info_experience{
+  margin-left: 2%;
 }
 .col_50_home_image {
   width: 50%;
@@ -244,11 +295,11 @@ body{
   overflow: visible;
 }
 .position_relative {
-    position: relative;
-      align-items: center;
+  position: relative;
+  align-items: center;
   justify-content: center;
-    overflow: visible;
-      display: flex;
+  overflow: visible;
+  display: flex;
 }
 .circle-bg {
   position: absolute;
@@ -283,8 +334,8 @@ body{
   top: -200px;         
   left: -75px;          
   z-index: 2;    
+  pointer-events: none;
 }
-
 
 
 
