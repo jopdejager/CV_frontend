@@ -20,9 +20,33 @@ function Home() {
             <Link className="checkout_button" to="/menu">Check out my work</Link>
             </div>
             <div className="info_experience row"></div>
-            <h1>1+</h1>
+            <div className="container_experience">
+            <div className="blok_job_experience">
+              <div className="getal_job_experience">
+                <h1>1+</h1>
+            </div>
+              <div className="text_job_experience">
+                <h1>job experience</h1>
+              </div>
+          </div>  
+          <div className="blok_job_experience">
+            <div className="getal_job_experience">
+              <h1>5+</h1>
+            </div>
+            <div className="text_job_experience">
+              <h1>Years Experience</h1>
+            </div>
           </div>
-
+          <div className="blok_job_experience">
+            <div className="getal_job_experience">
+              <h1>3+</h1>
+            </div>
+            <div className="text_job_experience">
+              <h1>Years of IT experience</h1>
+            </div>
+          </div>
+          </div>
+        </div>
         <div className='col_50_home_image'>
           <div className="circle-bg">
             <h1 className="big-text">Meulmeester</h1>
