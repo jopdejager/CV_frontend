@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MenuSvg from '../assets/Menu.svg';
 
 function Header() {
   return (
     <>
-      <head>
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
-      </head>
       <nav className='navbar'>
 
         <div className="col-10"></div>
@@ -19,15 +16,15 @@ function Header() {
 
         <div className="col-25 nav-left-links">
           <div className="nav_links right-align">
-            <Link className="home_button_link" to="/">Home</Link>
-            <Link className="Defauld_button_link" to="/menu">My work</Link>
+            <NavLink className="home_button_link" to="/">Home</NavLink>
+            <NavLink className="Defauld_button_link" to="/menu">My work</NavLink>
           </div>
         </div>
 
         <div className="col-25 nav-right-links">
           <div className="nav_links left-align">
-            <Link className="Defauld_button_link" to="/menu">Experience</Link>
-            <Link className="Defauld_button_link" to="/menu">About me</Link>
+            <NavLink className="Defauld_button_link" to="/menu">Experience</NavLink>
+            <NavLink className="Defauld_button_link" to="/menu">About me</NavLink>
           </div>
         </div>
 

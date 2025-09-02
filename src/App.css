@@ -174,7 +174,7 @@ strong {
   line-height: normal;
     
 }
-.Defauld_button_link{
+.Defauld_button_link, .Default_button_link{
   color: var(--Text-and-Main-Black, #424241);
 
   font-family: Poppins;
@@ -217,7 +217,7 @@ body{
   background-color: #F4E7D3;
   overflow-x: hidden;
   color: #ffffff;
-  font-family: "Bitcount", system-ui, sans-serif;
+  font-family: "Poppins", system-ui, sans-serif;
 }
  .container_home_page {
   display: flex;

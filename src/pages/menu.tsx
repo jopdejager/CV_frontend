@@ -3,7 +3,7 @@ function Menu() {
   return (
     <>
       <Header />
-    <a>hey</a>
+  <p>hey</p>
     </>
   );
 }

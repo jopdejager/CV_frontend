@@ -13,8 +13,8 @@ function Home() {
             <h1 className="qoute_text">Skilled IT specialist solving complex problems</h1>
           </div>
           <div className="text_vlak_home_page">
-            <a>My name is Jop Meulmeester, and I’m </a>
-            <a> starting my career as a System Engineer.</a>
+            <span>My name is Jop Meulmeester, and I’m </span>
+            <span> starting my career as a System Engineer.</span>
           </div>
           <div className="checkout">
             <Link className="checkout_button" to="/menu">Check out my work</Link>
