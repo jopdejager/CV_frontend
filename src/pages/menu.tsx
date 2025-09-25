@@ -1,4 +1,5 @@
-import Header from "../../../oude_codde/header";
+// Updated import to use local header component inside src/components
+import Header from "../components/header";
 function Menu() {
   return (
     <>
