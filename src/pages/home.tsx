@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/home.css'
 import JopImg from '../assets/Jopv4.png'
 
