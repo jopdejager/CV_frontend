@@ -1,0 +1,210 @@
+/* Home page styles (adapted from oude_codde/App.css) */
+
+/* 1) Hero grid placement */
+.hero-grid {
+  /* Keep column-gap identical to navbar using --grid-gap; only enlarge row spacing */
+  row-gap: var(--space-8);
+}
+.hero-left {
+  /* Start at the same place as the navbar grid (col 1) */
+  grid-column: 2 / span 5;
+}
+.hero-right {
+  grid-column: 8 / span 5;
+}   
+
+/* 2) Hero-left content */
+.qoute {
+  max-width: 75%;
+  /* layout aligned to grid: no centering */
+  display: block;
+  margin-top: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+  .qoute_text {
+  line-height: 1.2;
+  margin: 0;
+}
+
+.text_vlak_home_page {
+  font-family: "Poppins-Regular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #686866; 
+  font-size: 24px;
+  width: 550px;
+  margin-top: var(--space-7);
+  /* margin-top: 50px; */
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-top: var(--space-7);
+}
+
+.checkout_button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(66, 66, 65, 1);
+  box-sizing: border-box;
+  display: flex;
+  width: 242px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+.container_experience {
+  display: flex;
+  gap: var(--space-6);
+  width: 100%;
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.blok_job_experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+}
+
+.getal_job_experience {
+  height: 150px;
+  font-family: "Poppins-Medium", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #424241;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 96px;
+}
+
+.text_job_experience {
+  width: 200px;
+  font-family: "Poppins-Regular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #909090;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 3) Hero-right visuals (photo and circle) */
+.hero-right {
+  position: relative;
+  min-height: 600px;
+}
+
+/* Ensure section is a positioning context for the ticker */
+.hero-section {
+  position: relative;
+}
+
+.circle-bg {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  border: 50px solid rgba(235, 223, 204, 0.3);
+  background-color: transparent;
+  top: 0px;
+  left: -85px;
+  z-index: 1;
+}
+
+.big-text {
+  position: absolute;
+  bottom: -200px;
+  left: -280px;
+  font-size: 350px;
+  font-weight: 600;
+  color: #424241;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.05;
+  letter-spacing: 0;
+  line-height: normal;
+  font-family: "Poppins-SemiBold", Helvetica, Arial, sans-serif;
+}
+
+.logo_jop {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  top: -150px;
+  left: -75px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Rightward seamless motion: start halfway left (-50%), end at 0 */
+@keyframes ticker-move-right {
+  0% { transform: translateX(-20%); }
+  100% { transform: translateX(0); }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .ticker__track { animation-duration: 0.01ms; animation-iteration-count: 1; }
+}
+
+/* 4) Responsive (all @media at the bottom) */
+@media (max-width: 1024px) {
+  .hero-left { grid-column: 1 / -1; }
+  .hero-right { grid-column: 1 / -1; }
+}
+
+@media (max-width: 1024px) {
+  .text_vlak_home_page {
+    margin-top: 8px;
+    width: auto;
+    font-size: 20px;
+  }
+  .container_experience { margin-top: 8px; }
+}
+
+@media (max-width: 600px) {
+  .qoute { font-size: 26px; }
+  .text_vlak_home_page { font-size: 18px; }
+  .blok_job_experience { width: 48%; }
+}
+
+@media (max-width: 1600px) {
+  .circle-bg { width: 550px; height: 550px; }
+  .logo_jop { width: 600px; transform: translate(30px, 10px); }
+}
+
+@media (max-width: 1024px) {
+  .hero-right { min-height: 520px; }
+  .circle-bg { width: 420px; height: 420px; left: 120px; }
+  .logo_jop { width: 460px; transform: translate(0px, 0px); }
+  .ticker-wrap { height: 120px; margin-top: 10rem; }
+}
+
+@media (max-width: 600px) {
+  .hero-right { min-height: 420px; }
+  .circle-bg { width: 300px; height: 300px; left: 50%; transform: translateX(-50%); }
+  .logo_jop { width: 340px; left: 50%; transform: translateX(-50%); }
+  .big-text { font-size: 160px; left: 0; bottom: 20px; }
+  .ticker__item { font-size: 22px; padding-inline: 16px; }
+}
+
+@media (max-width: 1024px) {
+  /* wrapper reserves height on smaller screens */
+}
+
+@media (max-width: 600px) {
+  .ticker-wrap { height: 100px; margin-top: 8rem; }
+}
+
+@media (max-width: 600px) {
+  .ticker__item { font-size: 22px; padding-inline: 16px; }
+}
